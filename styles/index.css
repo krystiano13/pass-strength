@@ -1,104 +1,117 @@
 :root {
-    --text: #f6fdfc;
-    --background: #010404;
-    --primary: #25bba2;
-    --secondary: #0d4037;
-    --accent: #3fd9c0;
+  --text: #f6fdfc;
+  --background: #010404;
+  --primary: #25bba2;
+  --secondary: #0d4037;
+  --accent: #3fd9c0;
 }
 
-*,*::before,*::after {
-    box-sizing: border-box;
-    margin : 0;
-    padding : 0;
-    overflow : hidden;
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
 }
 
 body {
-    width : 100vw;
-    height : 100vh;
-    background-color: var(--background);
-    color : var(--text);
+  width: 100vw;
+  height: 100vh;
+  background-color: var(--background);
+  color: var(--text);
 
-    display : flex;
-    justify-content: center;
-    align-items: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 body > * {
-    font-family: 'Montserrat', sans-serif;
+  font-family: "Montserrat", sans-serif;
 }
 
 form {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
 
-    min-width : 20rem;
-    min-height : 25rem;
-    background-color: var(--secondary);
+  min-width: 20rem;
+  min-height: 25rem;
+  background-color: var(--secondary);
 
-    border-radius: 2rem;
+  border-radius: 2rem;
+
+  @media screen and (min-width : 2400px) {
+    transform: scale(1.5);
+  }
+
+  @media screen and (min-width : 3200px) {
+    transform: scale(2.5);
+  }
 }
 
-form input,form button, form .strength {
-    margin-top : 1rem;
-    margin-bottom: 1rem;
-    width : 75%;
+form input,
+form button,
+form .strength {
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+  width: 75%;
 }
 
 form .strength {
-    display : flex;
-    justify-content: center;
-    align-items: center;
-    width : 15rem;
-    height : .5rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 15rem;
+  height: 0.5rem;
 }
 
 .strength .bar {
-    width: 33%;
-    background-color: white;
-    height : .5rem;
+  width: 33%;
+  background-color: white;
+  height: 0.5rem;
 }
 
 #left {
-    border-right : solid black 1px;
-    border-top-left-radius: 0.5rem;
-    border-bottom-left-radius: 0.5rem;
+  border-right: solid black 1px;
+  border-top-left-radius: 0.5rem;
+  border-bottom-left-radius: 0.5rem;
 }
 
 #right {
-    border-left: solid black 1px;
-    border-top-right-radius: 0.5rem;
-    border-bottom-right-radius: 0.5rem;
+  border-left: solid black 1px;
+  border-top-right-radius: 0.5rem;
+  border-bottom-right-radius: 0.5rem;
 }
 
-input, button {
-    padding : 0.5rem;
-    padding-left : 1.25rem;
-    padding-right : 1.25rem;
-    text-align: center;
-    font-family: 'Montserrat', sans-serif;
+input,
+button {
+  padding: 0.5rem;
+  padding-left: 1.25rem;
+  padding-right: 1.25rem;
+  text-align: center;
+  font-family: "Montserrat", sans-serif;
 }
 
 button {
-    background-color: var(--primary);
-    color: var(--background);
-    font-weight: 500;
-    font-size: 1.15rem;
-    border: none;
-    border-radius: 2rem;
+  background-color: var(--primary);
+  color: var(--background);
+  font-weight: 500;
+  font-size: 1.15rem;
+  border: none;
+  border-radius: 2rem;
 }
 
 input {
-    background-color: var(--secondary);
-    border : none;
-    border-bottom: solid var(--accent) 1px;
-    outline : none;
-    font-size: 1.15rem;
-    color : var(--accent);
+  background-color: var(--secondary);
+  border: none;
+  border-bottom: solid var(--accent) 1px;
+  outline: none;
+  font-size: 1.15rem;
+  color: var(--accent);
 }
 
 input::placeholder {
-    color : var(--primary);
+  color: var(--primary);
 }

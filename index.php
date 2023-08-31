@@ -15,10 +15,11 @@
         <input placeholder="type your password" type="password" name="password" />
         <div class="strength">
             <div id="left" class="bar"></div>
-            <div class="bar"></div>
+            <div id="middle" class="bar"></div>
             <div id="right" class="bar"></div>
         </div>
         <button type="submit">Check</button>
     </form>
+    <script src="./scripts/index.js"></script
 </body>
 </html>
