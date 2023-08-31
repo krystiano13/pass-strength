@@ -12,7 +12,7 @@
 <body>
     <?php echo ""; ?>
     <form action="verify.php" method="post">
-        <input type="password" name="password" />
+        <input placeholder="type your password" type="password" name="password" />
         <div class="strength">
             <div id="left" class="bar"></div>
             <div class="bar"></div>

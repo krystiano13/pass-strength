@@ -78,4 +78,27 @@ input, button {
     padding-left : 1.25rem;
     padding-right : 1.25rem;
     text-align: center;
+    font-family: 'Montserrat', sans-serif;
+}
+
+button {
+    background-color: var(--primary);
+    color: var(--background);
+    font-weight: 500;
+    font-size: 1.15rem;
+    border: none;
+    border-radius: 2rem;
+}
+
+input {
+    background-color: var(--secondary);
+    border : none;
+    border-bottom: solid var(--accent) 1px;
+    outline : none;
+    font-size: 1.15rem;
+    color : var(--accent);
+}
+
+input::placeholder {
+    color : var(--primary);
 }
