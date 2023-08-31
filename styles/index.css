@@ -1,0 +1,22 @@
+:root {
+    --text: #f6fdfc;
+    --background: #010404;
+    --primary: #25bba2;
+    --secondary: #0d4037;
+    --accent: #3fd9c0;
+}
+
+*,*::before,*::after {
+    box-sizing: border-box;
+    margin : 0;
+    padding : 0;
+    overflow : hidden;
+}
+
+body {
+    width : 100vw;
+    height : 100vh;
+    background-color: var(--background);
+    color : var(--text);
+    font-family: 'Montserrat', sans-serif;
+}
