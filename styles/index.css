@@ -6,6 +6,10 @@
   --accent: #3fd9c0;
 }
 
+h1, h2 {
+    text-align: center;
+}
+
 h2 {
   margin-top : 1rem;
   font-size : 3rem;  
