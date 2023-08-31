@@ -10,16 +10,22 @@
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500&display=swap" rel="stylesheet">
 </head>
 <body>
-    <?php echo ""; ?>
-    <form action="verify.php" method="post">
-        <input placeholder="type your password" type="password" name="password" />
-        <div class="strength">
+    <?php
+        if(!isset($_POST['password'])) 
+            echo 
+            <<<FORM
+            <form action="" method="post">
+            <input placeholder="type your password" type="password" name="password" />
+            <div class="strength">
             <div id="left" class="bar"></div>
             <div id="middle" class="bar"></div>
             <div id="right" class="bar"></div>
-        </div>
-        <button type="submit">Check</button>
-    </form>
-    <script src="./scripts/index.js"></script
+            </div>
+            <button type="submit">Check</button>
+            </form>
+            FORM;
+    ?>
+    <?php require_once "verify.php" ?>
+    <script src="./scripts/index.js"></script>
 </body>
 </html>

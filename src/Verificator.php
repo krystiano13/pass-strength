@@ -27,7 +27,7 @@ final class Verificator {
             }
         }
 
-        $this -> strength = ($length + $UppercaseCount) * $specialCount;
+        $this -> strength = ($length + ($UppercaseCount * 1.25)) * $specialCount;
 
         return $this -> strength;
     }
