@@ -23,9 +23,9 @@
             </div>
             <button type="submit">Check</button>
             </form>
+            <script src="./scripts/index.js"></script>
             FORM;
     ?>
     <?php require_once "verify.php" ?>
-    <script src="./scripts/index.js"></script>
 </body>
 </html>

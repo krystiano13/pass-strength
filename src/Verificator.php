@@ -4,21 +4,21 @@ namespace App;
 
 final class Verificator {
     public string $password;
-    private int $strength;
+    private float $strength;
 
     public function __construct($password)
     {
         $this -> password = $password;
     }
 
-    public function __invoke():int
+    public function __invoke():float
     {
         $length = (int)strlen($this -> password);
         $specialCount = 1;
         $UppercaseCount = 0;
 
         for($i=0; $i<$length; $i++) {
-            if(preg_match('/[\'^£$%&*()}{@#~?><>,|=_+¬-]/', $this -> password[$i])) {
+            if(preg_match('/[\'!^£$%&*()}{@#~?><>,|=_+¬-]/', $this -> password[$i])) {
                 $specialCount++;
             }
 

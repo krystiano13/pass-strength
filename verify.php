@@ -10,11 +10,10 @@ if(isset($_POST['password'])) {
     $result = $verificator();
     $category = (string)"";
 
-    if($result >= 25) $category = "Weak";
-    else if($result >= 75) $category = "Normal";
+    if($result < 75) $category = "Weak";
+    else if($result >= 75 && $result < 100) $category = "Normal";
     else if($result >= 100) $category = "Strong";
-    else $category = "Very Weak";
 
-    echo "<h1>Your password strength score is equal:".$result."</h1>";
+    echo "<h1>Your password strength score is equal:".$result."</h1><br>";
     echo "<h2>".$category."</h2>";
 }

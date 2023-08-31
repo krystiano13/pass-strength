@@ -6,6 +6,12 @@
   --accent: #3fd9c0;
 }
 
+h2 {
+  margin-top : 1rem;
+  font-size : 3rem;  
+  color : var(--accent);
+}
+
 *,
 *::before,
 *::after {
@@ -22,6 +28,7 @@ body {
   color: var(--text);
 
   display: flex;
+  flex-direction: column;
   justify-content: center;
   align-items: center;
 }
