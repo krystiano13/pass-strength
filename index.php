@@ -10,6 +10,15 @@
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500&display=swap" rel="stylesheet">
 </head>
 <body>
-    <?php echo "Hello"; ?>
+    <?php echo ""; ?>
+    <form action="verify.php" method="post">
+        <input type="password" name="password" />
+        <div class="strenght">
+            <div id="left" class="bar"></div>
+            <div class="bar"></div>
+            <div id="right" class="bar"></div>
+        </div>
+        <button type="submit">Check</button>
+    </form>
 </body>
 </html>
